@@ -1,7 +1,7 @@
 # 🚀 E-Commerce Business Intelligence & AI SaaS
 
 An end-to-end commercial-grade micro-SaaS application built with Python and Streamlit. This project simulates live e-commerce API transactions, provides real-time sales performance metrics, leverages Meta's Prophet model for predictive revenue forecasting, and includes a proactive alert configuration hub.
-
+![Demo App](./demo.gif)
 ## 🌟 Key Features
 
 * **🔌 Real-Time E-Commerce API Connector**: Simulates live transaction data from platforms like Shopify or Stripe.
