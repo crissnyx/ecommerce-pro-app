@@ -26,5 +26,5 @@ An end-to-end commercial-grade micro-SaaS application built with Python and Stre
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/ecommerce-pro-app.git](https://github.com/your-username/ecommerce-pro-app.git)
+   git clone https://github.com/crissnyx/ecommerce-pro-app.git
    cd ecommerce-pro-app
