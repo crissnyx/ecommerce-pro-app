@@ -2,7 +2,7 @@
 
 An end-to-end commercial-grade micro-SaaS application built with Python and Streamlit. This project simulates live e-commerce API transactions, provides real-time sales performance metrics, leverages Meta's Prophet model for predictive revenue forecasting, and includes a proactive alert configuration hub.
 
-[![View Live Demo](https://img.shields.io/badge/🚀%20VIEW%20LIVE%20DEMO-STREAMLIT%20CLOUD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://crissnyx-ecommerce-pro-app-app.streamlit.app)
+[![View Live Demo](https://img.shields.io/badge/🚀%20VIEW%20LIVE%20DEMO-STREAMLIT%20CLOUD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ecommerce-sales-bi-dashboard-kbegpcriwpabvsmz9m9jd3.streamlit.app)
 
 ![Demo App](./demo.gif)
 
