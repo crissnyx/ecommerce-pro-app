@@ -40,12 +40,12 @@ A lightweight micro‑SaaS platform that:
 
 ```mermaid
 flowchart LR
-  A[Data Sources: Simulated / Shopify / Stripe] --> B[Ingest / Stream Simulator]
-  B --> C[Processing (Pandas / NumPy)]
-  C --> D[Forecasting (Prophet)]
-  C --> E[Storage (CSV / SQLite / Postgres)]
-  D --> F[Dashboard (Streamlit + Plotly)]
-  E --> F
-  D --> G[Alerts: Webhooks -> Slack / Discord / Twilio]
-  style A fill:#f3f4f6,stroke:#333,stroke-width:1px
-  style F fill:#fff7ed,stroke:#333,stroke-width:1px
+    A["Data Sources: Simulated / Shopify / Stripe"] --> B["Ingest / Stream Simulator"]
+    B --> C["Processing (Pandas & NumPy)"]
+    C --> D["Forecasting (Prophet)"]
+    C --> E["Storage (CSV / SQLite / Postgres)"]
+    D --> F["Dashboard (Streamlit & Plotly)"]
+    E --> F
+    D --> G["Alerts: Webhooks -> Slack / Discord / Twilio"]
+    style A fill:#f3f4f6,stroke:#333,stroke-width:1px
+    style F fill:#fff7ed,stroke:#333,stroke-width:1px
