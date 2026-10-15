@@ -1,34 +1,51 @@
-# 🚀 E-Commerce Business Intelligence & AI SaaS
+# 🚀 E-Commerce Business Intelligence & Revenue Intelligence SaaS
 
-An end-to-end commercial-grade micro-SaaS application built with Python and Streamlit. This project simulates live e-commerce API transactions, provides real-time sales performance metrics, leverages Meta's Prophet model for predictive revenue forecasting, and includes a proactive alert configuration hub.
+> AI-powered revenue intelligence and predictive sales forecasting specifically built for Direct‑to‑Consumer (DTC) e‑commerce SMBs (Shopify & Stripe sellers). Centralize transaction data, get accurate short‑term revenue forecasts, and receive automated operational alerts.
 
-[![View Live Demo](https://img.shields.io/badge/🚀%20VIEW%20LIVE%20DEMO-STREAMLIT%20CLOUD-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://ecommerce-sales-bi-dashboard-kbegpcriwpabvsmz9m9jd3.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Streamlit_Cloud-FF4B4B?style=for-the-badge&logo=streamlit)](https://ecommerce-sales-bi-dashboard-kbegpcriwpabvsmz9m9jd3.streamlit.app)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Prophet](https://img.shields.io/badge/ML_Engine-Prophet-0081FB?style=for-the-badge)](https://facebook.github.io/prophet/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](./LICENSE)
 
-![Demo App](./demo.gif)
+---
 
-## 🌟 Key Features
+## 🎯 Who is this for?
 
-- **🔌 Real-Time E-Commerce API Connector**: Simulates live transaction data from platforms like Shopify or Stripe.
-- **📊 Dynamic Business Intelligence Dashboard**: Interactive KPIs and visual breakdown of daily revenue and sales distribution by category using Plotly.
-- **🤖 AI-Powered Sales Forecasting**: Implements Meta Prophet machine learning models to project daily revenue trends with adjustable prediction horizons.
-- **⚡ Proactive Alerting System**: Simulates automated alert setups via Webhooks (Slack/Discord) and WhatsApp (Twilio) for daily revenue thresholds.
+- **DTC E‑commerce Store Owners (Shopify / Stripe):** Looking for automated, actionable revenue insights without complex spreadsheet setups.  
+- **Operations & Inventory Managers:** Needing early warnings on stock risks and revenue dips.  
+- **Growth & Marketing Leads:** Requiring reliable short‑term forecasts to optimize ad spend and campaign promotions.
 
-## 🛠️ Tech Stack
+---
 
-- **Frontend / Framework**: Streamlit
-- **Data Processing**: Pandas, NumPy
-- **Data Visualization**: Plotly Express
-- **Machine Learning Engine**: Meta Prophet
-- **HTTP & API Integration**: Requests
+## 💥 Problem & Value Proposition
 
-## 🚀 Getting Started
+### Problem
+Small and mid‑sized DTC merchants face:
+- **Fragmented data:** Disconnected metrics across platforms (Shopify, Stripe, manual CSV exports).  
+- **Delayed insights:** Manual, error‑prone reporting workflows that waste operational time.  
+- **Poor forecasting:** Inaccurate short‑term demand projections leading to stockouts or excess inventory.
 
-### Prerequisites
-- Python 3.9+ installed on your system.
+### Solution
+A lightweight micro‑SaaS platform that:
+- Simulates or ingests live e‑commerce transaction streams.  
+- Computes real‑time KPIs (net revenue, AOV, units sold, and category breakdowns).  
+- Employs Prophet (originally developed by Facebook, now maintained by Meta) time‑series models for configurable 7/14/30‑day revenue projections.  
+- Triggers automated multi‑channel webhook notifications (Slack, Discord, Twilio) when business thresholds are breached.
 
-### Installation
+> **Note:** This repository includes a simulated transaction stream for immediate demo and testing. Production connectivity to Shopify/Stripe APIs can be configured via environment variables.
 
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/crissnyx/ecommerce-pro-app.git](https://github.com/crissnyx/ecommerce-pro-app.git)
-   cd ecommerce-pro-app
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart LR
+  A[Data Sources: Simulated / Shopify / Stripe] --> B[Ingest / Stream Simulator]
+  B --> C[Processing (Pandas / NumPy)]
+  C --> D[Forecasting (Prophet)]
+  C --> E[Storage (CSV / SQLite / Postgres)]
+  D --> F[Dashboard (Streamlit + Plotly)]
+  E --> F
+  D --> G[Alerts: Webhooks -> Slack / Discord / Twilio]
+  style A fill:#f3f4f6,stroke:#333,stroke-width:1px
+  style F fill:#fff7ed,stroke:#333,stroke-width:1px
