@@ -33,3 +33,10 @@ EXPOSE 8501
 
 # Default command: run Streamlit app (adjust filename if different)
 CMD ["streamlit", "run", "app.py", "--server.port", "8501", "--server.headless", "true", "--server.enableCORS", "false"]
+
+# Healthcheck: perform a simple HTTP GET to the local Streamlit server
+# Uses Python's stdlib so no extra system package is required.
+HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 \
+  CMD python -c "import urllib.request,sys; \
+try: urllib.request.urlopen('http://127.0.0.1:8501', timeout=5); sys.exit(0) \
+except Exception: sys.exit(1)"
