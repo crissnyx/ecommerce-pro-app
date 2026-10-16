@@ -1,6 +1,6 @@
-[![Release](https://img.shields.io/github/v/release/crissnyx/ecommerce-pro-app?style=for-the-badge)](https://github.com/crissnyx/ecommerce-pro-app/releases)
-[![CI](https://img.shields.io/github/actions/workflow/status/crissnyx/ecommerce-pro-app/ci.yml?branch=main&style=for-the-badge)](https://github.com/crissnyx/ecommerce-pro-app/actions)
+[![Release](https://img.shields.io/github/v/release/crissnyx/ecommerce-pro-app?style=for-the-badge&v=2)](https://github.com/crissnyx/ecommerce-pro-app/releases)
 [![License](https://img.shields.io/github/license/crissnyx/ecommerce-pro-app?style=for-the-badge)](./LICENSE)
+
 # 🚀 E-Commerce Business Intelligence & Revenue Intelligence SaaS
 
 > AI-powered revenue intelligence and predictive sales forecasting specifically built for Direct‑to‑Consumer (DTC) e‑commerce SMBs (Shopify & Stripe sellers). Centralize transaction data, get accurate short‑term revenue forecasts, and receive automated operational alerts.
@@ -14,8 +14,8 @@
 
 ## 🎯 Who is this for?
 
-- **DTC E‑commerce Store Owners (Shopify / Stripe):** Looking for automated, actionable revenue insights without complex spreadsheet setups.  
-- **Operations & Inventory Managers:** Needing early warnings on stock risks and revenue dips.  
+- **DTC E‑commerce Store Owners (Shopify / Stripe):** Looking for automated, actionable revenue insights without complex spreadsheet setups.
+- **Operations & Inventory Managers:** Needing early warnings on stock risks and revenue dips.
 - **Growth & Marketing Leads:** Requiring reliable short‑term forecasts to optimize ad spend and campaign promotions.
 
 ---
@@ -24,15 +24,15 @@
 
 ### Problem
 Small and mid‑sized DTC merchants face:
-- **Fragmented data:** Disconnected metrics across platforms (Shopify, Stripe, manual CSV exports).  
-- **Delayed insights:** Manual, error‑prone reporting workflows that waste operational time.  
+- **Fragmented data:** Disconnected metrics across platforms (Shopify, Stripe, manual CSV exports).
+- **Delayed insights:** Manual, error‑prone reporting workflows that waste operational time.
 - **Poor forecasting:** Inaccurate short‑term demand projections leading to stockouts or excess inventory.
 
 ### Solution
 A lightweight micro‑SaaS platform that:
-- Simulates or ingests live e‑commerce transaction streams.  
-- Computes real‑time KPIs (net revenue, AOV, units sold, and category breakdowns).  
-- Employs Prophet (originally developed by Facebook, now maintained by Meta) time‑series models for configurable 7/14/30‑day revenue projections.  
+- Simulates or ingests live e‑commerce transaction streams.
+- Computes real‑time KPIs (net revenue, AOV, units sold, and category breakdowns).
+- Employs Prophet (originally developed by Facebook, now maintained by Meta) time‑series models for configurable 7/14/30‑day revenue projections.
 - Triggers automated multi‑channel webhook notifications (Slack, Discord, Twilio) when business thresholds are breached.
 
 > **Note:** This repository includes a simulated transaction stream for immediate demo and testing. Production connectivity to Shopify/Stripe APIs can be configured via environment variables.
