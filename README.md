@@ -1,3 +1,6 @@
+[![Release](https://img.shields.io/github/v/release/crissnyx/ecommerce-pro-app?style=for-the-badge)](https://github.com/crissnyx/ecommerce-pro-app/releases)
+[![CI](https://img.shields.io/github/actions/workflow/status/crissnyx/ecommerce-pro-app/ci.yml?branch=main&style=for-the-badge)](https://github.com/crissnyx/ecommerce-pro-app/actions)
+[![License](https://img.shields.io/github/license/crissnyx/ecommerce-pro-app?style=for-the-badge)](./LICENSE)
 # 🚀 E-Commerce Business Intelligence & Revenue Intelligence SaaS
 
 > AI-powered revenue intelligence and predictive sales forecasting specifically built for Direct‑to‑Consumer (DTC) e‑commerce SMBs (Shopify & Stripe sellers). Centralize transaction data, get accurate short‑term revenue forecasts, and receive automated operational alerts.
